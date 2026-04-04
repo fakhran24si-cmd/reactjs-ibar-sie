@@ -1,0 +1,235 @@
+/* ─── Global ─────────────────────────────────────── */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f0f4f8;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+/* ─── App wrapper ────────────────────────────────── */
+.app-wrapper {
+  width: 100%;
+  max-width: 520px;
+}
+
+/* ─── Form container ─────────────────────────────── */
+.form-container {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.form-header {
+  background: linear-gradient(135deg, #1a56db, #3b82f6);
+  padding: 28px 28px 24px;
+  color: white;
+}
+
+.form-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.form-subtitle {
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.form-body {
+  padding: 24px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* ─── Field wrapper ──────────────────────────────── */
+.field-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.field-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.field-input {
+  padding: 10px 14px;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #111827;
+  background: #f9fafb;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+  width: 100%;
+}
+
+.field-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+  background: #fff;
+}
+
+.field-input.input-error {
+  border-color: #ef4444;
+  background: #fff5f5;
+}
+
+/* ─── Error message ──────────────────────────────── */
+.error-msg {
+  font-size: 12px;
+  color: #dc2626;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 6px;
+  padding: 6px 10px;
+  margin-top: 2px;
+}
+
+/* ─── Char counter ───────────────────────────────── */
+.char-counter {
+  font-size: 12px;
+  color: #9ca3af;
+  text-align: right;
+  margin-top: -10px;
+  margin-bottom: 4px;
+}
+
+/* ─── Tombol submit ──────────────────────────────── */
+.btn-submit {
+  margin-top: 16px;
+  width: 100%;
+  padding: 13px;
+  background: #1a56db;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.btn-submit:hover {
+  background: #1648c0;
+}
+
+.btn-submit:active {
+  transform: scale(0.98);
+}
+
+.hint-valid {
+  margin-top: 16px;
+  font-size: 12px;
+  color: #9ca3af;
+  text-align: center;
+  font-style: italic;
+}
+
+/* ─── Hasil pendaftaran ──────────────────────────── */
+.hasil-wrapper {
+  padding: 24px 28px;
+}
+
+.hasil-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 16px;
+}
+
+.hasil-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.hasil-row {
+  display: flex;
+  gap: 12px;
+  padding: 10px 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.hasil-row:last-child {
+  border-bottom: none;
+}
+
+.hasil-key {
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+  min-width: 80px;
+}
+
+.hasil-val {
+  font-size: 13px;
+  color: #111827;
+}
+
+.hasil-esai {
+  font-style: italic;
+  color: #374151;
+}
+
+/* ─── Status badge ───────────────────────────────── */
+.status-badge {
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.status-lolos {
+  background: #f0fdf4;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
+.status-tidak {
+  background: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+.hasil-note {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+/* ─── Tombol reset ───────────────────────────────── */
+.btn-reset {
+  width: 100%;
+  padding: 11px;
+  background: transparent;
+  color: #1a56db;
+  border: 1.5px solid #1a56db;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-reset:hover {
+  background: #eff6ff;
+}
