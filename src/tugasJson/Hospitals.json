@@ -1,0 +1,867 @@
+[
+  {
+    "id": 1,
+    "name": "RS Siloam Hospitals",
+    "type": "Swasta",
+    "accreditation": "KARS Paripurna",
+    "established": 1996,
+    "rating": 4.8,
+    "beds": 350,
+    "image": "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=400&h=250&fit=crop",
+    "description": "Rumah sakit swasta bertaraf internasional dengan layanan 24 jam.",
+    "address": {
+      "street": "Jl. HR. Rasuna Said Kav. 62",
+      "city": "Jakarta",
+      "province": "DKI Jakarta",
+      "postal_code": "12950"
+    },
+    "contact": {
+      "phone": "021-2996-3000",
+      "email": "info@siloam.co.id",
+      "website": "www.siloamhospitals.com"
+    },
+    "doctors": [
+      {
+        "name": "Dr. Andi Wijaya, SpJP",
+        "specialist": "Jantung",
+        "schedule": "Senin-Jumat 08:00-14:00"
+      },
+      {
+        "name": "Dr. Sari Dewi, SpOG",
+        "specialist": "Kandungan",
+        "schedule": "Selasa-Sabtu 09:00-15:00"
+      },
+      {
+        "name": "Dr. Budi Santoso, SpB",
+        "specialist": "Bedah Umum",
+        "schedule": "Senin-Kamis 10:00-16:00"
+      }
+    ],
+    "facilities": [
+      { "name": "ICU", "available": true },
+      { "name": "NICU", "available": true },
+      { "name": "MRI", "available": true },
+      { "name": "Hemodialisa", "available": true },
+      { "name": "Cathlab", "available": true }
+    ],
+    "emergency": true,
+    "bpjs": true
+  },
+  {
+    "id": 2,
+    "name": "RSUP Dr. Sardjito",
+    "type": "Pemerintah",
+    "accreditation": "KARS Paripurna",
+    "established": 1982,
+    "rating": 4.6,
+    "beds": 850,
+    "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&h=250&fit=crop",
+    "description": "Rumah sakit pemerintah terbesar di Yogyakarta sebagai pusat rujukan nasional.",
+    "address": {
+      "street": "Jl. Kesehatan No.1, Senolowo",
+      "city": "Yogyakarta",
+      "province": "DI Yogyakarta",
+      "postal_code": "55281"
+    },
+    "contact": {
+      "phone": "0274-587333",
+      "email": "humas@sardjito.co.id",
+      "website": "www.rsup-sardjito.co.id"
+    },
+    "doctors": [
+      {
+        "name": "Prof. Dr. Harun Ismail, SpS",
+        "specialist": "Saraf",
+        "schedule": "Senin-Rabu 07:00-13:00"
+      },
+      {
+        "name": "Dr. Maya Kusuma, SpA",
+        "specialist": "Anak",
+        "schedule": "Setiap hari 08:00-12:00"
+      }
+    ],
+    "facilities": [
+      { "name": "ICU", "available": true },
+      { "name": "NICU", "available": true },
+      { "name": "MRI", "available": true },
+      { "name": "Radioterapi", "available": true },
+      { "name": "Bank Darah", "available": true }
+    ],
+    "emergency": true,
+    "bpjs": true
+  },
+  {
+    "id": 3,
+    "name": "RS Premier Bintaro",
+    "type": "Swasta",
+    "accreditation": "JCI",
+    "established": 2008,
+    "rating": 4.7,
+    "beds": 220,
+    "image": "https://images.unsplash.com/photo-1587351021759-3e566b3db4f1?w=400&h=250&fit=crop",
+    "description": "Rumah sakit modern dengan standar internasional Joint Commission International.",
+    "address": {
+      "street": "Jl. MH. Thamrin No.1, Bintaro",
+      "city": "Tangerang Selatan",
+      "province": "Banten",
+      "postal_code": "15224"
+    },
+    "contact": {
+      "phone": "021-7456-2121",
+      "email": "info@rspremier.co.id",
+      "website": "www.rspremier.co.id"
+    },
+    "doctors": [
+      {
+        "name": "Dr. Rizal Hermawan, SpOT",
+        "specialist": "Ortopedi",
+        "schedule": "Senin-Jumat 09:00-15:00"
+      },
+      {
+        "name": "Dr. Lina Agustina, SpM",
+        "specialist": "Mata",
+        "schedule": "Selasa-Sabtu 08:00-14:00"
+      }
+    ],
+    "facilities": [
+      { "name": "ICU", "available": true },
+      { "name": "MRI", "available": true },
+      { "name": "CT Scan", "available": true },
+      { "name": "Laboratorium", "available": true },
+      { "name": "Hemodialisa", "available": false }
+    ],
+    "emergency": true,
+    "bpjs": false
+  },
+  {
+    "id": 4,
+    "name": "RSUD Dr. Soetomo",
+    "type": "Pemerintah",
+    "accreditation": "KARS Paripurna",
+    "established": 1938,
+    "rating": 4.5,
+    "beds": 1500,
+    "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=400&h=250&fit=crop",
+    "description": "Rumah sakit umum daerah terbesar di Jawa Timur dan salah satu terbesar di Indonesia.",
+    "address": {
+      "street": "Jl. Mayjen Prof. Dr. Moestopo No.6-8",
+      "city": "Surabaya",
+      "province": "Jawa Timur",
+      "postal_code": "60285"
+    },
+    "contact": {
+      "phone": "031-5501-078",
+      "email": "info@rsudrsoetomo.jatimprov.go.id",
+      "website": "www.rsudrsoetomo.jatimprov.go.id"
+    },
+    "doctors": [
+      {
+        "name": "Dr. Wahyu Prasetyo, SpPD",
+        "specialist": "Penyakit Dalam",
+        "schedule": "Senin-Jumat 07:00-13:00"
+      },
+      {
+        "name": "Dr. Eka Novitasari, SpJP",
+        "specialist": "Jantung",
+        "schedule": "Senin-Kamis 08:00-14:00"
+      }
+    ],
+    "facilities": [
+      { "name": "ICU", "available": true },
+      { "name": "ICCU", "available": true },
+      { "name": "MRI", "available": true },
+      { "name": "Radioterapi", "available": true },
+      { "name": "Transplantasi Ginjal", "available": true }
+    ],
+    "emergency": true,
+    "bpjs": true
+  },
+  {
+    "id": 5,
+    "name": "RS Pondok Indah",
+    "type": "Swasta",
+    "accreditation": "JCI",
+    "established": 1986,
+    "rating": 4.9,
+    "beds": 300,
+    "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=400&h=250&fit=crop",
+    "description": "Rumah sakit swasta premium dengan teknologi mutakhir dan layanan terpadu.",
+    "address": {
+      "street": "Jl. Metro Duta Kav. UE, Pondok Indah",
+      "city": "Jakarta",
+      "province": "DKI Jakarta",
+      "postal_code": "12310"
+    },
+    "contact": {
+      "phone": "021-765-7525",
+      "email": "info@rspondokindah.co.id",
+      "website": "www.rspondokindah.co.id"
+    },
+    "doctors": [
+      {
+        "name": "Dr. Hendra Gunawan, SpB-KBD",
+        "specialist": "Bedah Digestif",
+        "schedule": "Senin-Jumat 08:00-15:00"
+      },
+      {
+        "name": "Dr. Fitri Handayani, SpAn",
+        "specialist": "Anestesi",
+        "schedule": "Setiap hari 07:00-19:00"
+      }
+    ],
+    "facilities": [
+      { "name": "ICU", "available": true },
+      { "name": "NICU", "available": true },
+      { "name": "MRI 3 Tesla", "available": true },
+      { "name": "Robotic Surgery", "available": true },
+      { "name": "Cathlab", "available": true }
+    ],
+    "emergency": true,
+    "bpjs": false
+  },
+  {
+    "id": 6,
+    "name": "RS Khusus Jantung Harapan Kita",
+    "type": "Khusus",
+    "accreditation": "KARS Paripurna",
+    "established": 1985,
+    "rating": 4.8,
+    "beds": 190,
+    "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&h=250&fit=crop",
+    "description": "Pusat jantung dan pembuluh darah nasional terkemuka di Indonesia.",
+    "address": {
+      "street": "Jl. S. Parman Kav. 87",
+      "city": "Jakarta",
+      "province": "DKI Jakarta",
+      "postal_code": "11420"
+    },
+    "contact": {
+      "phone": "021-568-4093",
+      "email": "info@pjnhk.go.id",
+      "website": "www.pjnhk.go.id"
+    },
+    "doctors": [
+      {
+        "name": "Dr. Yoga Yuniadi, SpJP-FIHA",
+        "specialist": "Elektrofisiologi",
+        "schedule": "Senin-Jumat 08:00-14:00"
+      },
+      {
+        "name": "Dr. Iwan Dakota, SpJP",
+        "specialist": "Kardiologi Intervensi",
+        "schedule": "Senin-Kamis 07:00-13:00"
+      }
+    ],
+    "facilities": [
+      { "name": "Cathlab", "available": true },
+      { "name": "ICCU", "available": true },
+      { "name": "Bedah Jantung", "available": true },
+      { "name": "Ekokardiografi", "available": true },
+      { "name": "CT Cardiac", "available": true }
+    ],
+    "emergency": true,
+    "bpjs": true
+  },
+  {
+    "id": 7,
+    "name": "RS Medistra",
+    "type": "Swasta",
+    "accreditation": "KARS Utama",
+    "established": 1991,
+    "rating": 4.5,
+    "beds": 180,
+    "image": "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=400&h=250&fit=crop",
+    "description": "Rumah sakit swasta dengan layanan komprehensif di kawasan bisnis Jakarta Selatan.",
+    "address": {
+      "street": "Jl. Gatot Subroto Kav. 59",
+      "city": "Jakarta",
+      "province": "DKI Jakarta",
+      "postal_code": "12950"
+    },
+    "contact": {
+      "phone": "021-521-0200",
+      "email": "info@medistra.com",
+      "website": "www.medistra.com"
+    },
+    "doctors": [
+      {
+        "name": "Dr. Gunawan Wibisono, SpPD",
+        "specialist": "Penyakit Dalam",
+        "schedule": "Senin-Jumat 09:00-15:00"
+      },
+      {
+        "name": "Dr. Meiyana Putri, SpKK",
+        "specialist": "Kulit Kelamin",
+        "schedule": "Selasa-Sabtu 10:00-16:00"
+      }
+    ],
+    "facilities": [
+      { "name": "ICU", "available": true },
+      { "name": "MRI", "available": false },
+      { "name": "CT Scan", "available": true },
+      { "name": "Laboratorium", "available": true },
+      { "name": "Fisioterapi", "available": true }
+    ],
+    "emergency": true,
+    "bpjs": true
+  },
+  {
+    "id": 8,
+    "name": "RSUP Hasan Sadikin",
+    "type": "Pemerintah",
+    "accreditation": "KARS Paripurna",
+    "established": 1923,
+    "rating": 4.4,
+    "beds": 1000,
+    "image": "https://images.unsplash.com/photo-1504439468489-c8920d796a29?w=400&h=250&fit=crop",
+    "description": "Rumah sakit umum pusat rujukan utama untuk wilayah Jawa Barat.",
+    "address": {
+      "street": "Jl. Pasteur No.38",
+      "city": "Bandung",
+      "province": "Jawa Barat",
+      "postal_code": "40161"
+    },
+    "contact": {
+      "phone": "022-203-3985",
+      "email": "humas@rshs.or.id",
+      "website": "www.rshs.or.id"
+    },
+    "doctors": [
+      {
+        "name": "Dr. Taufik Rahman, SpOG",
+        "specialist": "Kandungan",
+        "schedule": "Senin-Jumat 07:00-13:00"
+      },
+      {
+        "name": "Dr. Dian Saraswati, SpA",
+        "specialist": "Anak",
+        "schedule": "Setiap hari 08:00-14:00"
+      }
+    ],
+    "facilities": [
+      { "name": "ICU", "available": true },
+      { "name": "NICU", "available": true },
+      { "name": "Radioterapi", "available": true },
+      { "name": "PET Scan", "available": true },
+      { "name": "Bank Darah", "available": true }
+    ],
+    "emergency": true,
+    "bpjs": true
+  },
+  {
+    "id": 9,
+    "name": "RS Mitra Keluarga Kelapa Gading",
+    "type": "Swasta",
+    "accreditation": "KARS Utama",
+    "established": 1995,
+    "rating": 4.6,
+    "beds": 270,
+    "image": "https://images.unsplash.com/photo-1581093577421-f561a654a353?w=400&h=250&fit=crop",
+    "description": "Jaringan rumah sakit swasta terpercaya dengan layanan holistik keluarga.",
+    "address": {
+      "street": "Jl. Boulevard Kav. 25, Kelapa Gading",
+      "city": "Jakarta",
+      "province": "DKI Jakarta",
+      "postal_code": "14240"
+    },
+    "contact": {
+      "phone": "021-4585-0550",
+      "email": "info@mitrakeluarga.com",
+      "website": "www.mitrakeluarga.com"
+    },
+    "doctors": [
+      {
+        "name": "Dr. Agus Hermawan, SpB",
+        "specialist": "Bedah",
+        "schedule": "Senin-Jumat 08:00-14:00"
+      },
+      {
+        "name": "Dr. Novita Sari, SpM",
+        "specialist": "Mata",
+        "schedule": "Selasa-Sabtu 09:00-15:00"
+      }
+    ],
+    "facilities": [
+      { "name": "ICU", "available": true },
+      { "name": "NICU", "available": true },
+      { "name": "MRI", "available": true },
+      { "name": "Hemodialisa", "available": true },
+      { "name": "Endoskopi", "available": true }
+    ],
+    "emergency": true,
+    "bpjs": true
+  },
+  {
+    "id": 10,
+    "name": "RS Khusus Kanker Dharmais",
+    "type": "Khusus",
+    "accreditation": "KARS Paripurna",
+    "established": 1993,
+    "rating": 4.7,
+    "beds": 260,
+    "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=250&fit=crop",
+    "description": "Pusat kanker nasional dengan layanan onkologi komprehensif dan terdepan.",
+    "address": {
+      "street": "Jl. Let. Jend. S. Parman Kav. 84-86",
+      "city": "Jakarta",
+      "province": "DKI Jakarta",
+      "postal_code": "11420"
+    },
+    "contact": {
+      "phone": "021-568-3709",
+      "email": "info@dharmais.co.id",
+      "website": "www.dharmais.co.id"
+    },
+    "doctors": [
+      {
+        "name": "Dr. Samuel Hadiyanto, SpOnk",
+        "specialist": "Onkologi",
+        "schedule": "Senin-Jumat 08:00-14:00"
+      },
+      {
+        "name": "Dr. Ratna Dewi, SpB-Onk",
+        "specialist": "Bedah Onkologi",
+        "schedule": "Senin-Kamis 09:00-15:00"
+      }
+    ],
+    "facilities": [
+      { "name": "Radioterapi", "available": true },
+      { "name": "Kemoterapi", "available": true },
+      { "name": "PET Scan", "available": true },
+      { "name": "MRI", "available": true },
+      { "name": "Brachytherapy", "available": true }
+    ],
+    "emergency": false,
+    "bpjs": true
+  },
+  {
+    "id": 11,
+    "name": "RS Santosa Bandung",
+    "type": "Swasta",
+    "accreditation": "JCI",
+    "established": 2009,
+    "rating": 4.7,
+    "beds": 310,
+    "image": "https://images.unsplash.com/photo-1519494080410-f9aa76cb4283?w=400&h=250&fit=crop",
+    "description": "Rumah sakit swasta bertaraf internasional dengan fasilitas lengkap di Bandung.",
+    "address": {
+      "street": "Jl. Kebonjati No.38",
+      "city": "Bandung",
+      "province": "Jawa Barat",
+      "postal_code": "40181"
+    },
+    "contact": {
+      "phone": "022-4248-8888",
+      "email": "info@santosahospital.com",
+      "website": "www.santosahospital.com"
+    },
+    "doctors": [
+      {
+        "name": "Dr. Rudi Hartono, SpJP",
+        "specialist": "Jantung",
+        "schedule": "Senin-Jumat 08:00-14:00"
+      },
+      {
+        "name": "Dr. Anggi Permata, SpN",
+        "specialist": "Saraf",
+        "schedule": "Selasa-Sabtu 09:00-15:00"
+      }
+    ],
+    "facilities": [
+      { "name": "ICU", "available": true },
+      { "name": "Cathlab", "available": true },
+      { "name": "MRI 3 Tesla", "available": true },
+      { "name": "Robotic Surgery", "available": false },
+      { "name": "Hemodialisa", "available": true }
+    ],
+    "emergency": true,
+    "bpjs": false
+  },
+  {
+    "id": 12,
+    "name": "RSUD Arifin Achmad",
+    "type": "Pemerintah",
+    "accreditation": "KARS Paripurna",
+    "established": 1970,
+    "rating": 4.2,
+    "beds": 600,
+    "image": "https://images.unsplash.com/photo-1516841273335-e39b37888115?w=400&h=250&fit=crop",
+    "description": "Rumah sakit umum daerah rujukan utama Provinsi Riau.",
+    "address": {
+      "street": "Jl. Diponegoro No.2",
+      "city": "Pekanbaru",
+      "province": "Riau",
+      "postal_code": "28122"
+    },
+    "contact": {
+      "phone": "0761-20361",
+      "email": "info@rsudaaa.riau.go.id",
+      "website": "www.rsudaaa.riau.go.id"
+    },
+    "doctors": [
+      {
+        "name": "Dr. Zulkifli Nasution, SpPD",
+        "specialist": "Penyakit Dalam",
+        "schedule": "Senin-Jumat 07:00-13:00"
+      },
+      {
+        "name": "Dr. Yuni Rahayu, SpKJ",
+        "specialist": "Jiwa",
+        "schedule": "Senin-Kamis 09:00-14:00"
+      }
+    ],
+    "facilities": [
+      { "name": "ICU", "available": true },
+      { "name": "CT Scan", "available": true },
+      { "name": "Laboratorium", "available": true },
+      { "name": "Bank Darah", "available": true },
+      { "name": "Hemodialisa", "available": true }
+    ],
+    "emergency": true,
+    "bpjs": true
+  },
+  {
+    "id": 13,
+    "name": "RS Columbia Asia Medan",
+    "type": "Swasta",
+    "accreditation": "JCI",
+    "established": 2010,
+    "rating": 4.6,
+    "beds": 160,
+    "image": "https://images.unsplash.com/photo-1576671081837-49000212a370?w=400&h=250&fit=crop",
+    "description": "Bagian dari jaringan Columbia Asia dengan layanan berkelas Asia Tenggara.",
+    "address": {
+      "street": "Jl. Listrik No.2A",
+      "city": "Medan",
+      "province": "Sumatera Utara",
+      "postal_code": "20112"
+    },
+    "contact": {
+      "phone": "061-456-6368",
+      "email": "info.medan@columbiaasia.com",
+      "website": "www.columbiaasia.com"
+    },
+    "doctors": [
+      {
+        "name": "Dr. Hendri Syahputra, SpOG",
+        "specialist": "Kandungan",
+        "schedule": "Senin-Sabtu 08:00-14:00"
+      },
+      {
+        "name": "Dr. Mutia Zahara, SpA",
+        "specialist": "Anak",
+        "schedule": "Setiap hari 09:00-15:00"
+      }
+    ],
+    "facilities": [
+      { "name": "ICU", "available": true },
+      { "name": "NICU", "available": true },
+      { "name": "MRI", "available": true },
+      { "name": "CT Scan", "available": true },
+      { "name": "Endoskopi", "available": true }
+    ],
+    "emergency": true,
+    "bpjs": false
+  },
+  {
+    "id": 14,
+    "name": "RS Khusus Ibu dan Anak Hermina",
+    "type": "Khusus",
+    "accreditation": "KARS Utama",
+    "established": 1967,
+    "rating": 4.5,
+    "beds": 200,
+    "image": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=400&h=250&fit=crop",
+    "description": "Spesialis perawatan ibu dan anak dengan standar pelayanan prima.",
+    "address": {
+      "street": "Jl. Raya Jatinegara Barat No.126",
+      "city": "Jakarta",
+      "province": "DKI Jakarta",
+      "postal_code": "13320"
+    },
+    "contact": {
+      "phone": "021-819-4422",
+      "email": "info@hermina.co.id",
+      "website": "www.hermina.co.id"
+    },
+    "doctors": [
+      {
+        "name": "Dr. Nurul Hidayah, SpOG",
+        "specialist": "Kandungan",
+        "schedule": "Setiap hari 07:00-20:00"
+      },
+      {
+        "name": "Dr. Trisna Wibowo, SpA",
+        "specialist": "Anak",
+        "schedule": "Setiap hari 08:00-20:00"
+      }
+    ],
+    "facilities": [
+      { "name": "NICU", "available": true },
+      { "name": "Kamar Bersalin", "available": true },
+      { "name": "Laktasi", "available": true },
+      { "name": "USG 4D", "available": true },
+      { "name": "Perinatologi", "available": true }
+    ],
+    "emergency": true,
+    "bpjs": true
+  },
+  {
+    "id": 15,
+    "name": "RSUP Dr. Wahidin Sudirohusodo",
+    "type": "Pemerintah",
+    "accreditation": "KARS Paripurna",
+    "established": 1947,
+    "rating": 4.3,
+    "beds": 800,
+    "image": "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=400&h=250&fit=crop",
+    "description": "Rumah sakit umum pusat rujukan nasional untuk wilayah Indonesia Timur.",
+    "address": {
+      "street": "Jl. Perintis Kemerdekaan Km.11",
+      "city": "Makassar",
+      "province": "Sulawesi Selatan",
+      "postal_code": "90245"
+    },
+    "contact": {
+      "phone": "0411-584668",
+      "email": "info@wahidin.co.id",
+      "website": "www.wahidin.co.id"
+    },
+    "doctors": [
+      {
+        "name": "Dr. Faisal Basri, SpBP-RE",
+        "specialist": "Bedah Plastik",
+        "schedule": "Senin-Jumat 08:00-14:00"
+      },
+      {
+        "name": "Dr. Kartika Sari, SpRad",
+        "specialist": "Radiologi",
+        "schedule": "Setiap hari 07:00-15:00"
+      }
+    ],
+    "facilities": [
+      { "name": "ICU", "available": true },
+      { "name": "MRI", "available": true },
+      { "name": "PET Scan", "available": false },
+      { "name": "Radioterapi", "available": true },
+      { "name": "Transplantasi", "available": true }
+    ],
+    "emergency": true,
+    "bpjs": true
+  },
+  {
+    "id": 16,
+    "name": "RS Omni Pulomas",
+    "type": "Swasta",
+    "accreditation": "KARS Utama",
+    "established": 2006,
+    "rating": 4.4,
+    "beds": 210,
+    "image": "https://images.unsplash.com/photo-1543333995-a78aea2eee50?w=400&h=250&fit=crop",
+    "description": "Rumah sakit modern dengan lokasi strategis di Jakarta Timur.",
+    "address": {
+      "street": "Jl. Pulomas Barat VI No.22",
+      "city": "Jakarta",
+      "province": "DKI Jakarta",
+      "postal_code": "13210"
+    },
+    "contact": {
+      "phone": "021-2947-0000",
+      "email": "info@omni-hospitals.com",
+      "website": "www.omni-hospitals.com"
+    },
+    "doctors": [
+      {
+        "name": "Dr. Yogi Prasetya, SpOT",
+        "specialist": "Ortopedi",
+        "schedule": "Senin-Jumat 09:00-15:00"
+      },
+      {
+        "name": "Dr. Dewi Utari, SpTHT",
+        "specialist": "THT",
+        "schedule": "Selasa-Sabtu 08:00-14:00"
+      }
+    ],
+    "facilities": [
+      { "name": "ICU", "available": true },
+      { "name": "CT Scan", "available": true },
+      { "name": "MRI", "available": false },
+      { "name": "Fisioterapi", "available": true },
+      { "name": "Laboratorium", "available": true }
+    ],
+    "emergency": true,
+    "bpjs": true
+  },
+  {
+    "id": 17,
+    "name": "RSUD Prof. Dr. Margono Soekarjo",
+    "type": "Pemerintah",
+    "accreditation": "KARS Paripurna",
+    "established": 1926,
+    "rating": 4.3,
+    "beds": 700,
+    "image": "https://images.unsplash.com/photo-1578991624414-276ef23a534f?w=400&h=250&fit=crop",
+    "description": "Rumah sakit umum daerah rujukan regional Banyumas dan sekitarnya.",
+    "address": {
+      "street": "Jl. Dr. Gumbreg No.1",
+      "city": "Purwokerto",
+      "province": "Jawa Tengah",
+      "postal_code": "53112"
+    },
+    "contact": {
+      "phone": "0281-632708",
+      "email": "info@margono.co.id",
+      "website": "www.margono.co.id"
+    },
+    "doctors": [
+      {
+        "name": "Dr. Sarwono Prawirohardjo, SpOG",
+        "specialist": "Kandungan",
+        "schedule": "Senin-Jumat 07:00-12:00"
+      },
+      {
+        "name": "Dr. Irawati Setiawan, SpPD",
+        "specialist": "Penyakit Dalam",
+        "schedule": "Senin-Kamis 08:00-13:00"
+      }
+    ],
+    "facilities": [
+      { "name": "ICU", "available": true },
+      { "name": "NICU", "available": true },
+      { "name": "Hemodialisa", "available": true },
+      { "name": "CT Scan", "available": true },
+      { "name": "Bank Darah", "available": true }
+    ],
+    "emergency": true,
+    "bpjs": true
+  },
+  {
+    "id": 18,
+    "name": "RS EMC Tangerang",
+    "type": "Swasta",
+    "accreditation": "KARS Madya",
+    "established": 2015,
+    "rating": 4.3,
+    "beds": 150,
+    "image": "https://images.unsplash.com/photo-1516549655169-df83a0774514?w=400&h=250&fit=crop",
+    "description": "Rumah sakit dengan konsep modern dan pelayanan berbasis teknologi digital.",
+    "address": {
+      "street": "Jl. KH. Hasyim Ashari No.24",
+      "city": "Tangerang",
+      "province": "Banten",
+      "postal_code": "15119"
+    },
+    "contact": {
+      "phone": "021-5576-7000",
+      "email": "info@emchospital.com",
+      "website": "www.emchospital.com"
+    },
+    "doctors": [
+      {
+        "name": "Dr. Indra Kusuma, SpU",
+        "specialist": "Urologi",
+        "schedule": "Senin-Jumat 10:00-16:00"
+      },
+      {
+        "name": "Dr. Puspita Sari, SpGK",
+        "specialist": "Gizi Klinik",
+        "schedule": "Senin-Sabtu 09:00-14:00"
+      }
+    ],
+    "facilities": [
+      { "name": "ICU", "available": true },
+      { "name": "CT Scan", "available": true },
+      { "name": "Laboratorium", "available": true },
+      { "name": "Fisioterapi", "available": true },
+      { "name": "MRI", "available": false }
+    ],
+    "emergency": true,
+    "bpjs": true
+  },
+  {
+    "id": 19,
+    "name": "RS Advent Bandung",
+    "type": "Swasta",
+    "accreditation": "KARS Utama",
+    "established": 1942,
+    "rating": 4.5,
+    "beds": 250,
+    "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=400&h=250&fit=crop&sig=1",
+    "description": "Rumah sakit swasta tertua di Bandung dengan komitmen pelayanan kasih.",
+    "address": {
+      "street": "Jl. Cihampelas No.161",
+      "city": "Bandung",
+      "province": "Jawa Barat",
+      "postal_code": "40131"
+    },
+    "contact": {
+      "phone": "022-203-4386",
+      "email": "info@adventhospital.com",
+      "website": "www.adventhospital.com"
+    },
+    "doctors": [
+      {
+        "name": "Dr. Paulus Hartono, SpB",
+        "specialist": "Bedah",
+        "schedule": "Senin-Jumat 08:00-14:00"
+      },
+      {
+        "name": "Dr. Melissa Tandra, SpM",
+        "specialist": "Mata",
+        "schedule": "Selasa-Sabtu 09:00-15:00"
+      }
+    ],
+    "facilities": [
+      { "name": "ICU", "available": true },
+      { "name": "MRI", "available": true },
+      { "name": "Laboratorium", "available": true },
+      { "name": "Farmasi 24 Jam", "available": true },
+      { "name": "Hemodialisa", "available": false }
+    ],
+    "emergency": true,
+    "bpjs": false
+  },
+  {
+    "id": 20,
+    "name": "RS Universitas Airlangga",
+    "type": "Pemerintah",
+    "accreditation": "KARS Paripurna",
+    "established": 2012,
+    "rating": 4.6,
+    "beds": 420,
+    "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&h=250&fit=crop&sig=2",
+    "description": "Rumah sakit pendidikan universitas dengan integrasi riset medis terkini.",
+    "address": {
+      "street": "Jl. Mayjen Prof. Dr. Moestopo No.47",
+      "city": "Surabaya",
+      "province": "Jawa Timur",
+      "postal_code": "60132"
+    },
+    "contact": {
+      "phone": "031-5922-220",
+      "email": "info@rsua.unair.ac.id",
+      "website": "www.rsua.unair.ac.id"
+    },
+    "doctors": [
+      {
+        "name": "Prof. Dr. Budi Irawan, SpPD-KGH",
+        "specialist": "Ginjal Hipertensi",
+        "schedule": "Senin-Rabu 07:00-13:00"
+      },
+      {
+        "name": "Dr. Ayu Paramita, SpKJ",
+        "specialist": "Jiwa",
+        "schedule": "Senin-Jumat 08:00-14:00"
+      }
+    ],
+    "facilities": [
+      { "name": "ICU", "available": true },
+      { "name": "NICU", "available": true },
+      { "name": "MRI", "available": true },
+      { "name": "PET Scan", "available": false },
+      { "name": "Laboratorium Riset", "available": true }
+    ],
+    "emergency": true,
+    "bpjs": true
+  }
+]

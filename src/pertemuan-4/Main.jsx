@@ -1,13 +1,259 @@
-import { createRoot } from "react-dom/client";
-import "./tailwind.css";
-import FrameworkList from "./FrameworkListSearcher";
-import ResponsiveText from "./ResponsiveText";
-
-createRoot(document.getElementById("root"))
-    .render(
-        <div>
-            {/* <FrameworkList/>         */}
-            <ResponsiveText/>
-        </div>
-        
-    )
+[
+  {
+    id: 1,
+    nama: "Candi Borobudur",
+    kategori: "Budaya",
+    harga: 50000,
+    gambar:
+      "https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?w=500",
+    lokasi: {
+      provinsi: "Jawa Tengah",
+      kota: "Magelang",
+      alamat: "Jl. Badrawati",
+    },
+    ulasan: { skor: 4.9, jumlah: 1250, rekomendasi: true },
+    fasilitas: ["Parkir Luas", "Pemandu Wisata", "Museum"],
+  },
+  {
+    id: 2,
+    nama: "Pantai Kuta",
+    kategori: "Alam",
+    harga: 0,
+    gambar:
+      "https://images.unsplash.com/photo-1513407030348-c983a97b98d8?w=500",
+    lokasi: { provinsi: "Bali", kota: "Badung", alamat: "Kuta Beach Rd" },
+    ulasan: { skor: 4.5, jumlah: 5400, rekomendasi: true },
+    fasilitas: ["Surfing", "Payung Pantai", "Cafe"],
+  },
+  {
+    id: 3,
+    nama: "Gunung Bromo",
+    kategori: "Alam",
+    harga: 220000,
+    gambar:
+      "https://images.unsplash.com/photo-1588448663023-145464169528?w=500",
+    lokasi: {
+      provinsi: "Jawa Timur",
+      kota: "Probolinggo",
+      alamat: "Taman Nasional BTS",
+    },
+    ulasan: { skor: 4.8, jumlah: 890, rekomendasi: true },
+    fasilitas: ["Jeep", "Kuda", "Penyewaan Jaket"],
+  },
+  {
+    id: 4,
+    nama: "Museum Fatahillah",
+    kategori: "Edukasi",
+    harga: 5000,
+    gambar:
+      "https://images.unsplash.com/photo-1621235316335-5154388e3675?w=500",
+    lokasi: {
+      provinsi: "DKI Jakarta",
+      kota: "Jakarta Barat",
+      alamat: "Kota Tua",
+    },
+    ulasan: { skor: 4.3, jumlah: 420, rekomendasi: false },
+    fasilitas: ["Sewa Sepeda", "Tour Guide", "Kantin"],
+  },
+  {
+    id: 5,
+    nama: "Labuan Bajo",
+    kategori: "Alam",
+    harga: 1500000,
+    gambar:
+      "https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?w=500",
+    lokasi: {
+      provinsi: "NTT",
+      kota: "Manggarai Barat",
+      alamat: "Jl. Soekarno Hatta",
+    },
+    ulasan: { skor: 5.0, jumlah: 2100, rekomendasi: true },
+    fasilitas: ["Kapal Phinisi", "Diving", "Snorkeling"],
+  },
+  {
+    id: 6,
+    nama: "Floating Market",
+    kategori: "Hiburan",
+    harga: 35000,
+    gambar:
+      "https://images.unsplash.com/photo-1596422846543-75c6fc18a593?w=500",
+    lokasi: {
+      provinsi: "Jawa Barat",
+      kota: "Lembang",
+      alamat: "Jl. Grand Hotel",
+    },
+    ulasan: { skor: 4.4, jumlah: 310, rekomendasi: true },
+    fasilitas: ["Kuliner", "Perahu", "Spot Foto"],
+  },
+  {
+    id: 7,
+    nama: "Taman Mini Indonesia Indah",
+    kategori: "Budaya",
+    harga: 25000,
+    gambar:
+      "https://images.unsplash.com/photo-1603130491036-74911075d506?w=500",
+    lokasi: {
+      provinsi: "DKI Jakarta",
+      kota: "Jakarta Timur",
+      alamat: "Jl. Cipayung",
+    },
+    ulasan: { skor: 4.6, jumlah: 950, rekomendasi: true },
+    fasilitas: ["Kereta Gantung", "Anjungan Daerah", "Museum"],
+  },
+  {
+    id: 8,
+    nama: "Raja Ampat",
+    kategori: "Alam",
+    harga: 2500000,
+    gambar: "https://images.unsplash.com/photo-1544122159-39c2121092f5?w=500",
+    lokasi: { provinsi: "Papua Barat", kota: "Waisai", alamat: "Pulau Waigeo" },
+    ulasan: { skor: 4.9, jumlah: 750, rekomendasi: true },
+    fasilitas: ["Homestay", "Diving Gear", "Boat"],
+  },
+  {
+    id: 9,
+    nama: "Farmhouse Lembang",
+    kategori: "Hiburan",
+    harga: 30000,
+    gambar:
+      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=500",
+    lokasi: {
+      provinsi: "Jawa Barat",
+      kota: "Bandung",
+      alamat: "Jl. Raya Lembang",
+    },
+    ulasan: { skor: 4.2, jumlah: 580, rekomendasi: false },
+    fasilitas: ["Kostum Eropa", "Susu Murni", "Petting Zoo"],
+  },
+  {
+    id: 10,
+    nama: "Danau Toba",
+    kategori: "Alam",
+    harga: 10000,
+    gambar:
+      "https://images.unsplash.com/photo-1572450803099-0d23589b9171?w=500",
+    lokasi: { provinsi: "Sumatera Utara", kota: "Samosir", alamat: "Parapat" },
+    ulasan: { skor: 4.7, jumlah: 1400, rekomendasi: true },
+    fasilitas: ["Kapal Feri", "Hotel", "Sewa Motor"],
+  },
+  {
+    id: 11,
+    nama: "Lawang Sewu",
+    kategori: "Budaya",
+    harga: 15000,
+    gambar:
+      "https://images.unsplash.com/photo-1596701062351-be5f6a45526d?w=500",
+    lokasi: { provinsi: "Jawa Tengah", kota: "Semarang", alamat: "Jl. Pemuda" },
+    ulasan: { skor: 4.4, jumlah: 620, rekomendasi: true },
+    fasilitas: ["Pemandu Sejarah", "Lampu Hias", "Kantin"],
+  },
+  {
+    id: 12,
+    nama: "Batu Night Spectacular",
+    kategori: "Hiburan",
+    harga: 40000,
+    gambar:
+      "https://images.unsplash.com/photo-1534000263448-c71c99fa53c1?w=500",
+    lokasi: {
+      provinsi: "Jawa Timur",
+      kota: "Batu",
+      alamat: "Jl. Oro-oro Ombo",
+    },
+    ulasan: { skor: 4.5, jumlah: 480, rekomendasi: true },
+    fasilitas: ["Wahana Permainan", "Food Court", "Lampion"],
+  },
+  {
+    id: 13,
+    nama: "Garuda Wisnu Kencana",
+    kategori: "Budaya",
+    harga: 125000,
+    gambar:
+      "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=500",
+    lokasi: { provinsi: "Bali", kota: "Badung", alamat: "Uluwatu" },
+    ulasan: { skor: 4.7, jumlah: 3200, rekomendasi: true },
+    fasilitas: ["Amfiteater", "Shuttle Bus", "Restoran"],
+  },
+  {
+    id: 14,
+    nama: "Kawah Putih",
+    kategori: "Alam",
+    harga: 28000,
+    gambar:
+      "https://images.unsplash.com/photo-1565011523534-747a8601f10a?w=500",
+    lokasi: {
+      provinsi: "Jawa Barat",
+      kota: "Ciwidey",
+      alamat: "Gunung Patuha",
+    },
+    ulasan: { skor: 4.6, jumlah: 890, rekomendasi: true },
+    fasilitas: ["Masker Gratis", "Ontang-anting", "Toilet"],
+  },
+  {
+    id: 15,
+    nama: "Jatim Park 3",
+    kategori: "Edukasi",
+    harga: 110000,
+    gambar: "https://images.unsplash.com/photo-1544894079-e81a9eb1da8b?w=500",
+    lokasi: { provinsi: "Jawa Timur", kota: "Batu", alamat: "Jl. Ir Soekarno" },
+    ulasan: { skor: 4.8, jumlah: 1100, rekomendasi: true },
+    fasilitas: ["Dino Park", "Museum Musik", "Loker"],
+  },
+  {
+    id: 16,
+    nama: "Orchid Forest",
+    kategori: "Alam",
+    harga: 40000,
+    gambar:
+      "https://images.unsplash.com/photo-1444464666168-49d633b867ad?w=500",
+    lokasi: { provinsi: "Jawa Barat", kota: "Lembang", alamat: "Cikole" },
+    ulasan: { skor: 4.5, jumlah: 670, rekomendasi: true },
+    fasilitas: ["Wood Bridge", "Golf Course", "Camping"],
+  },
+  {
+    id: 17,
+    nama: "Taman Safari Bogor",
+    kategori: "Edukasi",
+    harga: 230000,
+    gambar:
+      "https://images.unsplash.com/photo-1504194104404-433180773017?w=500",
+    lokasi: { provinsi: "Jawa Barat", kota: "Cisarua", alamat: "Puncak" },
+    ulasan: { skor: 4.7, jumlah: 4100, rekomendasi: true },
+    fasilitas: ["Safari Malam", "Baby Zoo", "Waterpark"],
+  },
+  {
+    id: 18,
+    nama: "Benteng Vredeburg",
+    kategori: "Budaya",
+    harga: 3000,
+    gambar:
+      "https://images.unsplash.com/photo-1590424753062-3251aa96e019?w=500",
+    lokasi: { provinsi: "DIY", kota: "Yogyakarta", alamat: "Jl. Malioboro" },
+    ulasan: { skor: 4.3, jumlah: 530, rekomendasi: false },
+    fasilitas: ["Diorama", "Perpustakaan", "Halaman Luas"],
+  },
+  {
+    id: 19,
+    nama: "Wakatobi",
+    kategori: "Alam",
+    harga: 1200000,
+    gambar: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=500",
+    lokasi: { provinsi: "Sultra", kota: "Wakatobi", alamat: "Pulau Tomia" },
+    ulasan: { skor: 4.9, jumlah: 340, rekomendasi: true },
+    fasilitas: ["Resort", "Dive Center", "Airport"],
+  },
+  {
+    id: 20,
+    nama: "Taman Pintar",
+    kategori: "Edukasi",
+    harga: 20000,
+    gambar:
+      "https://images.unsplash.com/photo-1503676260728-1c00da07ea5e?w=500",
+    lokasi: {
+      provinsi: "DIY",
+      kota: "Yogyakarta",
+      alamat: "Jl. Panembahan Senopati",
+    },
+    ulasan: { skor: 4.6, jumlah: 820, rekomendasi: true },
+    fasilitas: ["Planetarium", "Zona Sains", "Area Bermain"],
+  },
+];
