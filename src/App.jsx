@@ -1,11 +1,11 @@
 import React, { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
-
+import './App.css';
 // Import Layout & Komponen Statis
 import MainLayout from "./layouts/MainLayout";
 import AuthLayout from "./layouts/AuthLayout";
 import ErrorPage from "./components/ErrorPage";
-
+import Loading from "./components/Loading";
 // Lazy Loading Pages (Hanya definisikan di sini saja)
 const Dashboard = React.lazy(() => import("./pages/main/Dashboard"));
 const Orders = React.lazy(() => import("./pages/main/Orders"));
