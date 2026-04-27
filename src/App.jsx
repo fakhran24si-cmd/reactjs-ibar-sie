@@ -1,40 +1,54 @@
+import React, { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
-import Sidebar from "./layouts/Sidebar";
-import Header from "./layouts/Header";
-import Dashboard from "./pages/Dashboard";
-import Orders from "./pages/Orders";
-import Customers from "./pages/Customers";
+
+// Import Layout & Komponen Statis
+import MainLayout from "./layouts/MainLayout";
+import AuthLayout from "./layouts/AuthLayout";
 import ErrorPage from "./components/ErrorPage";
-import NotFound from "./pages/NotFound";
+
+// Lazy Loading Pages (Hanya definisikan di sini saja)
+const Dashboard = React.lazy(() => import("./pages/main/Dashboard"));
+const Orders = React.lazy(() => import("./pages/main/Orders"));
+const Customers = React.lazy(() => import("./pages/main/Customers"));
+const NotFound = React.lazy(() => import("./pages/main/NotFound"));
+const Login = React.lazy(() => import("./pages/auth/Login"));
+const Register = React.lazy(() => import("./pages/auth/Register"));
+const Forgot = React.lazy(() => import("./pages/auth/Forgot"));
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100 flex">
-      <Sidebar />
-      <div className="flex-1 p-4">
-        <Header />
-        <Routes>
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/orders" element={<Orders />} />
-          <Route path="/customers" element={<Customers />} />
-
-          {/* Rute Latihan */}
+    // Suspense wajib ada jika menggunakan React.lazy
+    <Suspense fallback={<div className="flex h-screen items-center justify-center">Loading...</div>}>
+      <Routes>
+        {/* Group 1: Menggunakan MainLayout */}
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<Dashboard />} />
+          <Route path="orders" element={<Orders />} />
+          <Route path="customers" element={<Customers />} />
+          <Route path="error" element={<ErrorPage />} />
           <Route
-            path="/400"
+            path="400"
             element={<ErrorPage code="400" message="Bad Request" icon="⚠️" />}
           />
           <Route
-            path="/401"
+            path="401"
             element={<ErrorPage code="401" message="Unauthorized" icon="🔒" />}
           />
           <Route
-            path="/403"
+            path="403"
             element={<ErrorPage code="403" message="Forbidden" icon="🛑" />}
           />
           <Route path="*" element={<NotFound />} />
-        </Routes>
-      </div>
-    </div>
+        </Route>
+
+        {/* Group 2: Menggunakan AuthLayout */}
+        <Route element={<AuthLayout />}>
+          <Route path="login" element={<Login />} />
+          <Route path="register" element={<Register />} />
+          <Route path="forgot" element={<Forgot />} />
+        </Route>
+      </Routes>
+    </Suspense>
   );
 }
 
