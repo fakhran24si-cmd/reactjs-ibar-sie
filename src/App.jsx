@@ -18,7 +18,7 @@ const Forgot = React.lazy(() => import("./pages/auth/Forgot"));
 function App() {
   return (
     // Suspense wajib ada jika menggunakan React.lazy
-    <Suspense fallback={<div className="flex h-screen items-center justify-center">Loading...</div>}>
+    <Suspense fallback={<Loading />}>
       <Routes>
         {/* Group 1: Menggunakan MainLayout */}
         <Route path="/" element={<MainLayout />}>
