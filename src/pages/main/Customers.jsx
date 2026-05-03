@@ -1,5 +1,5 @@
 import PageHeader from "../../components/PageHeader";
-
+import { FaUserPlus } from "react-icons/fa";
 export default function Customers() {
   // Generate 30 data JSON otomatis sesuai atribut modul
   const customersData = Array.from({ length: 30 }, (_, i) => ({
@@ -14,8 +14,8 @@ export default function Customers() {
     <div className="p-4">
       {/* PageHeader dengan Props sesuai instruksi */}
       <PageHeader title="Customers" breadcrumb="Dashboard / Customer List">
-        <button className="rounded-lg bg-green-500 px-4 py-2 text-white font-bold hover:bg-green-600 transition-all">
-          Add New Customer
+        <button className="flex items-center bg-indigo-600 text-white px-4 py-2 rounded-xl">
+          <FaUserPlus className="mr-2" /> Add Guest
         </button>
       </PageHeader>
 

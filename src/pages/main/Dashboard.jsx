@@ -1,58 +1,61 @@
 import PageHeader from "../../components/PageHeader";
-import { FaShoppingCart, FaTruck, FaBan, FaDollarSign } from "react-icons/fa";
+// Import ikon yang relevan untuk metrik hotel[cite: 12]
+import { MdBedroomChild, MdLocalLaundryService } from "react-icons/md";
+import { FaCalendarCheck, FaDollarSign } from "react-icons/fa";
 
 export default function Dashboard() {
-  // Data New Customers telah dihapus dari array ini
+  // Data array stats disesuaikan dengan topik hotel[cite: 12]
   const stats = [
     {
       id: 1,
-      label: "Total Orders",
-      value: "75",
-      icon: <FaShoppingCart />,
-      color: "bg-green-500",
-      barColor: "bg-green-500",
-      progress: "75%",
+      label: "Rooms Available",
+      value: "45/100",
+      icon: <MdBedroomChild />,
+      color: "bg-indigo-600",
+      barColor: "bg-indigo-600",
+      progress: "45%",
     },
     {
       id: 2,
-      label: "Total Delivered",
-      value: "175",
-      icon: <FaTruck />,
-      color: "bg-blue-500",
-      barColor: "bg-blue-500",
-      progress: "90%",
+      label: "Check-ins Today",
+      value: "12",
+      icon: <FaCalendarCheck />,
+      color: "bg-amber-500",
+      barColor: "bg-amber-500",
+      progress: "80%",
     },
     {
       id: 3,
-      label: "Total Canceled",
-      value: "40",
-      icon: <FaBan />,
-      color: "bg-red-500",
-      barColor: "bg-red-500",
-      progress: "20%",
+      label: "Pending Laundry",
+      value: "28",
+      icon: <MdLocalLaundryService />,
+      color: "bg-cyan-500",
+      barColor: "bg-cyan-500",
+      progress: "30%",
     },
     {
       id: 4,
       label: "Total Revenue",
-      value: "Rp 12.8M",
+      value: "Rp 45.5M",
       icon: <FaDollarSign />,
-      color: "bg-yellow-500",
-      barColor: "bg-yellow-500",
-      progress: "65%",
+      color: "bg-emerald-600",
+      barColor: "bg-emerald-600",
+      progress: "70%",
     },
   ];
 
   return (
     <div>
-      <PageHeader />
+      {/* PageHeader menggunakan breadcrumb array sesuai instruksi[cite: 6, 12] */}
+      <PageHeader title="Hotel Overview" breadcrumb={["Main", "Dashboard"]} />
 
-      {/* Grid disesuaikan menjadi grid-cols-4 agar tampilan tetap simetris */}
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 mt-6">
         {stats.map((item) => (
           <div
             key={item.id}
             className="flex flex-col rounded-3xl bg-white p-6 shadow-sm border border-gray-100 transition-all hover:shadow-lg"
           >
+            {/* Wrapper ikon dengan warna dinamis[cite: 12] */}
             <div
               className={`w-12 h-12 rounded-2xl ${item.color} flex items-center justify-center text-white mb-4 shadow-lg shadow-opacity-20`}
             >
@@ -68,7 +71,6 @@ export default function Dashboard() {
               </p>
             </div>
 
-            {/* Fitur Progress Bar tetap ada untuk kategori lainnya */}
             <div className="mt-auto">
               <div className="flex justify-between mb-1">
                 <span className="text-[10px] font-bold text-gray-500">

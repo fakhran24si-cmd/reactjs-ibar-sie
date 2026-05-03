@@ -1,5 +1,5 @@
 import PageHeader from "../../components/PageHeader";
-
+import { FaCalendarPlus } from "react-icons/fa";
 export default function Orders() {
   // Generate 30 data otomatis
   const orders = Array.from({ length: 30 }, (_, i) => ({
@@ -12,9 +12,10 @@ export default function Orders() {
 
   return (
     <div>
-      <PageHeader title="Orders" breadcrumb={["Dashboard", "Order List"]}>
-        <button className="bg-green-500 text-white px-5 py-2 rounded-xl font-bold">
-          + Add Order
+      <PageHeader title="Reservations" breadcrumb={["Dashboard", "reservations"]}>
+        <button className="bg-indigo-500 text-white px-5 py-2 rounded-xl font-bold">
+          <FaCalendarPlus className="mr-2" />
+          + Add Reservation
         </button>
       </PageHeader>
 
@@ -22,7 +23,7 @@ export default function Orders() {
         <table className="w-full text-left">
           <thead className="bg-gray-50 border-b">
             <tr>
-              <th className="p-4">No Order</th>
+              <th className="p-4">No Reservation</th>
               <th className="p-4">Customer</th>
               <th className="p-4">Total</th>
               <th className="p-4">Status</th>

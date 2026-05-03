@@ -27,12 +27,12 @@ export default function Header() {
         {/* Icons */}
         <div
           id="notification-icon"
-          className="relative cursor-pointer rounded-2xl bg-blue-100 p-3 text-blue-500"
+          className="relative cursor-pointer rounded-2xl bg-indigo-100 p-3 text-indigo-500"
         >
           <FaBell />
           <span
             id="notification-badge"
-            className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 rounded-full bg-blue-200 px-2 py-1 text-xs"
+            className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 rounded-full bg-indigo-200 px-2 py-1 text-xs"
           >
             50
           </span>
@@ -40,14 +40,14 @@ export default function Header() {
 
         <div
           id="chart-icon"
-          className="cursor-pointer rounded-2xl bg-blue-100 p-3"
+          className="cursor-pointer rounded-2xl bg-indigo-100 p-3"
         >
           <FcAreaChart />
         </div>
 
         <div
           id="settings-icon"
-          className="cursor-pointer rounded-2xl bg-red-100 p-3 text-red-500"
+          className="cursor-pointer rounded-2xl bg-slate-100 p-3 text-slate-500"
         >
           <SlSettings />
         </div>
