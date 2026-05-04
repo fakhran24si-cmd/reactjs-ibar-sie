@@ -2,7 +2,7 @@ import React from "react";
 // Pastikan import Link di bagian atas!
 import { Link } from "react-router-dom";
 // Import data dari folder yang sama
-import productsData from "./products.json";
+import productsData from "./Products.json";
 
 const Produk = () => {
   return (
