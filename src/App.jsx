@@ -1,12 +1,16 @@
 import React, { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import './App.css';
+
 // Import Layout & Komponen Statis
 import MainLayout from "./layouts/MainLayout";
 import AuthLayout from "./layouts/AuthLayout";
 import ErrorPage from "./components/ErrorPage";
 import Loading from "./components/Loading";
-// Lazy Loading Pages (Hanya definisikan di sini saja)
+
+// 1. Buat route baru serta import dengan React.lazy() sesuai modul
+
+// Lazy Loading Pages lainnya
 const Dashboard = React.lazy(() => import("./pages/main/Dashboard"));
 const Orders = React.lazy(() => import("./pages/main/Orders"));
 const Customers = React.lazy(() => import("./pages/main/Customers"));
@@ -14,15 +18,20 @@ const NotFound = React.lazy(() => import("./pages/main/NotFound"));
 const Login = React.lazy(() => import("./pages/auth/Login"));
 const Register = React.lazy(() => import("./pages/auth/Register"));
 const Forgot = React.lazy(() => import("./pages/auth/Forgot"));
-
+const ProductDetail = React.lazy(() => import("./pages/ProductDetail"));
+const Produk = React.lazy(() => import("./pages/main/Produk"));
 function App() {
   return (
-    // Suspense wajib ada jika menggunakan React.lazy
+    // Suspense wajib ada jika menggunakan
     <Suspense fallback={<Loading />}>
       <Routes>
         {/* Group 1: Menggunakan MainLayout */}
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Dashboard />} />
+          <Route path="products" element={<Produk />} />
+          {/* Penambahan route ProductDetail sesuai instruksi modul */}
+          <Route path="products/:id" element={<ProductDetail />} />
+          <Route path="products" element={<Produk />} />
           <Route path="orders" element={<Orders />} />
           <Route path="customers" element={<Customers />} />
           <Route path="error" element={<ErrorPage />} />
@@ -39,14 +48,15 @@ function App() {
             element={<ErrorPage code="403" message="Forbidden" icon="🛑" />}
           />
           <Route path="*" element={<NotFound />} />
-        </Route>
-
+        </Route>{" "}
+        {/* Penutup MainLayout */}
         {/* Group 2: Menggunakan AuthLayout */}
         <Route element={<AuthLayout />}>
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
           <Route path="forgot" element={<Forgot />} />
-        </Route>
+        </Route>{" "}
+        {/* Penutup AuthLayout */}
       </Routes>
     </Suspense>
   );
