@@ -1,7 +1,7 @@
 import { FaBell, FaSearch } from "react-icons/fa";
 import { FcAreaChart } from "react-icons/fc";
 import { SlSettings } from "react-icons/sl";
-
+import profilePic from "../assets/zayn.jpg";
 export default function Header() {
   return (
     <div
@@ -61,10 +61,9 @@ export default function Header() {
             Hello, <b>Fakhran Ikbaar</b>
           </span>
           <img
-            id="profile-avatar"
-            src="img/profpic.jpeg"
-            alt="profile avatar"
-            className="w-10 h-10 rounded-full"
+            src={profilePic}
+            alt="Profile"
+            className="w-10 h-10 rounded-full object-cover border border-gray-200"
           />
         </div>
       </div>
