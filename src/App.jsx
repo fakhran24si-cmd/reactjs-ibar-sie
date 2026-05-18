@@ -20,6 +20,7 @@ const Register = React.lazy(() => import("./pages/auth/Register"));
 const Forgot = React.lazy(() => import("./pages/auth/Forgot"));
 const ProductDetail = React.lazy(() => import("./pages/ProductDetail"));
 const Produk = React.lazy(() => import("./pages/main/Produk"));
+const Components = React.lazy(() => import("./pages/main/Components"));
 function App() {
   return (
     // Suspense wajib ada jika menggunakan
@@ -35,6 +36,7 @@ function App() {
           <Route path="orders" element={<Orders />} />
           <Route path="customers" element={<Customers />} />
           <Route path="error" element={<ErrorPage />} />
+          <Route path="components" element={<Components />} />
           <Route
             path="400"
             element={<ErrorPage code="400" message="Bad Request" icon="⚠️" />}

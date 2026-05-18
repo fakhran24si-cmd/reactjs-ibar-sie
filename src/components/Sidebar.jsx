@@ -42,6 +42,11 @@ export default function Sidebar() {
         <NavLink to="/customers" className={menuClass}>
           <FaUsers className="mr-3 text-lg" /> Guest List
         </NavLink>
+        
+        <NavLink to="/components" className={menuClass}>
+          <MdMeetingRoom className="mr-3 text-lg text-cyan-500" /> Components
+        </NavLink>
+
 
         <div className="pt-4 pb-2 px-4 text-xs font-bold text-gray-400 uppercase tracking-widest">
           System Status
